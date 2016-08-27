@@ -6,6 +6,7 @@
 	<div class="clear"></div>
 	<hr>
 	@if(count($task))
+		<h3 class="text-right"><a href="/create-task">Insert a task</a></h3>
 		@foreach($task as $tasks)
 			<h2><a href="/task/{{$tasks->id}}">{{ $tasks->task_title}}</a></h2>
 			<h3><b>Task Details:</b> {{ $tasks->task_details }}</h3>
