@@ -38,12 +38,12 @@ class NotesController extends Controller
     }
 
     public function all() {
-    	$note = Notes::get();
+    	$note = Notes::latest()->get();
 
     	return view('note.allNote', compact('note'));
     }
 
-    public function delete($id, FormValidator $request) {
+    public function delete($id) {
         $note = Notes::where('id', $id)->first();
 
         $note->delete($note);

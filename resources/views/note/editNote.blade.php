@@ -1,7 +1,9 @@
 @extends('layout')
 
 @section('content')
-	<h1>Edit: {{ $note->note_title}}</h1>
+	<h1 class="col-md-6 col-sm-6 col-xs-12 col-lg-6">Edit: {{ $note->note_title}}</h1>
+	@include('partials.menu')
+	<div class="clear"></div>
 	<hr>
 	<form action="/note/{{ $note->id }}" method="POST">
 		<input type="hidden" name="_method" value="PATCH">

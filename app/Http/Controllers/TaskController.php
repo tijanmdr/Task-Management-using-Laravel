@@ -48,8 +48,16 @@ class TaskController extends Controller
     }
 
     public function all() {
-    	$task = Tasks::get();
+    	$task = Tasks::latest()->get();
 
     	return view('task.allTask', compact('task'));
+    }
+
+    public function delete($id) {
+        $task = Tasks::where('id', $id)->first();
+
+        $task->delete($task);
+
+        return redirect('/tasks');
     }
 }

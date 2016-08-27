@@ -9,7 +9,7 @@ Route::get('/notes', 'NotesController@all');
 Route::get('/edit-note/{ID}', 'NotesController@edit');
 Route::patch('/note/{ID}', 'NotesController@update');
 Route::get('/note/{ID}', 'NotesController@show');
-Route::delete('/note/{ID}', 'NotesController@delete');
+Route::get('/delete-note/{ID}', 'NotesController@delete');
 
 // For Tasks
 Route::get('/create-task', 'TaskController@create');
@@ -18,4 +18,5 @@ Route::get('/tasks', 'TaskController@all');
 Route::get('/edit-task/{id}', 'TaskController@edit');
 Route::patch('/task/{id}', 'TaskController@update');
 Route::get('/task/{id}', 'TaskController@show');
+Route::delete('/task/{id}', 'TaskController@delete');
 ?>

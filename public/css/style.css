@@ -1,3 +1,13 @@
 * {
 	font-family: Arial, Lato, Sans-Serif;
 }
+div.clear {
+	clear: both;
+}
+.nav-tabs {
+	border-bottom: 0px;
+}
+.nav.nav-tabs {
+	margin-top: 20px;
+	float: right;
+}
