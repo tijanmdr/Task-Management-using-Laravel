@@ -6,7 +6,7 @@
 	<div class="clear"></div>
 	<hr>
 	@if (count($note))
-		<h3 class="text-right"><a href="/create-note">Insert a note</a></h3>
+		<h4 class="btn btn-default"><a href="/create-note">Insert a note</a></h4>
 		@foreach ($note as $notes)
 			<h2><a href="/note/{{ $notes->id }}">{{ $notes->note_title}}</a></h2>
 			<h3><b>Task Details:</b> {{ $notes->note_details }}</h3>
