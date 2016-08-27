@@ -5,7 +5,7 @@ Tasker is a web application made from Laravel used to create, delete and update 
 ## Import Database
 
 - Open Terminal or CMD(from Windows via XAMPP)
-- Type '''php artisan migrate'''
+- Type "php artisan migrate"
 
 ## License
 
