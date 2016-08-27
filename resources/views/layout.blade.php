@@ -12,6 +12,11 @@
             <div class="content">
                 @yield('content')
             </div>
+            <hr>
         </div>
+        
+        <footer class="container footer">
+            &copy; {{ date('Y') }}, Tijan Manandhar
+        </footer>
     </body>
 </html>

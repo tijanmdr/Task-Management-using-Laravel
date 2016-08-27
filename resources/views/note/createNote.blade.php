@@ -3,7 +3,7 @@
 @section('content')
 	<h1>Insert a Note</h1>
 	<hr>
-	<form action="/" method="POST">
+	<form action="/notes" method="POST">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 		<label>Name</label>
 		<input type="text" class="form form-control" name="note_title"><br>

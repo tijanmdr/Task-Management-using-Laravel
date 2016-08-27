@@ -3,7 +3,7 @@
 @section('content')
 	<h1>Add a Task</h1>
 	<hr>
-	<form action="/" method="POST">
+	<form action="/tasks/" method="POST">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 		<label>Name</label>
 		<input type="text" class="form form-control" name="task_title"><br>
