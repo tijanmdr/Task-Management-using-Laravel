@@ -18,5 +18,5 @@ Route::get('/tasks', 'TaskController@all');
 Route::get('/edit-task/{id}', 'TaskController@edit');
 Route::patch('/task/{id}', 'TaskController@update');
 Route::get('/task/{id}', 'TaskController@show');
-Route::delete('/task/{id}', 'TaskController@delete');
+Route::get('/delete-task/{id}', 'TaskController@delete');
 ?>

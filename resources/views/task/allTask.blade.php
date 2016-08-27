@@ -15,5 +15,6 @@
 	@else
 		<h2>Sorry, there are no task available</h2>
 		<h3><a href="/create-task">Insert a task</a></h3>
+		<hr>
 	@endif
 @stop

@@ -15,4 +15,5 @@
 		<input type="date" class="form form-control" name="edited_on" value="{{ $task->edited_on }}"><br>
 		<input type="submit" class="form form-control btn btn-primary" value="Update Task">
 	</form>
+	<hr>
 @stop

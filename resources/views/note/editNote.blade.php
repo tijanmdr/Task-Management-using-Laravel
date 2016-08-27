@@ -15,4 +15,5 @@
 		<input type="date" class="form form-control" name="edited_on" value="{{ $note->edited_on }}"><br>
 		<input type="submit" class="form form-control btn btn-primary" value="Update note">
 	</form>
+	<hr>
 @stop

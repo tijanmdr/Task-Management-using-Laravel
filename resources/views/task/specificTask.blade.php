@@ -7,10 +7,7 @@
 	<hr>
 	<h3><b>Task Details:</b> {{ $task->task_details }}</h3>
 	<p><b>Edited on:</b> {{ $task->edited_on }}</p>
-	<form action="/task/{{ $task->id }}" method="post">
-		<input type="hidden" name="_token" value="{{ csrf_token() }}">
-		<input type="hidden" name="_method" value="delete">
-		<input type="submit" value="Delete Task" class="btn btn-danger">
-	</form>
+	<a href="/edit-task/{{ $task->id }}" class="btn btn-primary">Edit Task</a>
+	<a href="/delete-task/{{ $task->id }}" class="btn btn-danger">Delete Task</a>
 	<hr>
 @stop

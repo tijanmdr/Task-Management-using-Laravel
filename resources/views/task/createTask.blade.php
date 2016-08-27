@@ -14,4 +14,5 @@
 		<input type="date" class="form form-control" name="edited_on" value="{{ date('Y-m-d')}}"></input><br>
 		<input type="submit" class="form form-control btn btn-primary" value="Insert a Task">
 	</form>
+	<hr>
 @stop

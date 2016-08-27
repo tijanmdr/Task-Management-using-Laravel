@@ -7,11 +7,7 @@
 	<hr>
 	<h3><b>Task Details:</b> {{ $note->note_details }}</h3>
 	<p><b>Edited on:</b> {{ $note->edited_on }}</p>
+	<a href="/edit-note/{{ $note->id }}" class="btn btn-primary">Edit Note</a>
 	<a href="/delete-note/{{ $note->id }}" class="btn btn-danger">Delete Note</a>
 	<hr>
-	<!-- <form action="/note/{{ $note->id }}" method="post">
-		<input type="hidden" name="_token" value="{{ csrf_token() }}">
-		<input type="hidden" name="_method" value="delete">
-		<input type="submit" value="Delete Note" class="btn btn-danger">
-	</form> -->
 @stop
